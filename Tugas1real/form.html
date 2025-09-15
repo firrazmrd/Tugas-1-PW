@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Form</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="form.html">Form</a>
+            <a href="thx.html">Result</a>
+        </nav>
+    </div>
+
+    <div class="form">
+        <h2>Isi Data</h2>
+        <form action="thx.html" method="get">
+            <label>Nama Lengkap :</label>
+            <input type="text" id="nama" name="nama" required ><br><br>
+
+            <label>Jenis Kelamin :</label>
+            <input type="radio" id="Perempuan" name="gander" value="Perempuan" required>
+            <label for="Perempuan">Perempuan</label>
+            <input type="radio" id="Laki-laki" name="gander" value="Laki-laki">
+            <label for="Laki-laki">Laki-laki</label><br><br>
+
+            <label>Pilihan Kucing :</label>
+            <select name="pilihan" id="pilihan">
+                <option value="Anggora">Anggora</option>
+                <option value="Persia">Persia</option>
+                <option value="Harimau">Harimau</option>
+            </select><br><br>
+
+            <label>Dengan ini saya akan bertanggung jawab merawat kucing yang akan saya dapatkan</label>
+            <input type="checkbox" id="Setuju" name="Setuju" value="Setuju" required>
+            <label for="Setuju"> Setuju</label><br><br>
+    
+
+            <label>Pesan/Komentar:</label>
+            <textarea name="pesan" id="pesan"></textarea><br><br>
+
+            <input id="btn" type="submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        kotak = document.getElementById('btn')
+
+        kotak.onmouseover = () => {
+            kotak.style.background = 'lightblue'
+        }
+
+        kotak.onmouseout = () => {
+            kotak.style.background = ''
+        }
+    </script>
+
+</body>
+<footer>
+    <p>Watermark</p>
+</footer>
+</html>
