@@ -1,0 +1,23 @@
+body {
+    background-color: #d8f5d0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2b7a3d;
+}
+
+.nav-link, .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.table thead {
+    background-color: #b3e6be;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+}
